@@ -9,8 +9,7 @@ export default function TabThreeScreen() {
   const [useN,setN] = useState(0)
 
   const [useI,setI] = useState(0)
-
-
+  
   const [UpdateInterval] = useState(100)
 
   function _Accelerometer(){
@@ -65,8 +64,8 @@ export default function TabThreeScreen() {
     const alteracaoZ = ( Math.sin(atual.a)) * distancia
 
     if(
-      alteracaoX> 50 || alteracaoX < -50 
-      && alteracaoZ> 10 || alteracaoZ < -10 
+      alteracaoX > 50 || alteracaoX < -50 
+      && alteracaoZ > 10 || alteracaoZ < -10 
       && distancia - alteracaoY> 1 || distancia - alteracaoY < -1 
       )
     {
